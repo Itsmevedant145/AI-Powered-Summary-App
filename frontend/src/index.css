@@ -1,0 +1,101 @@
+/* 🌌 Audi-Inspired Dark Sci-Fi UI */
+
+/* 🔥 Dark Background with a Subtle Texture */
+body {
+  font-family: "Orbitron", sans-serif;
+  background: radial-gradient(circle, #0a0a0a 30%, #111111 100%);
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* 📂 Upload Section */
+.upload-container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 49, 49, 0.5);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(255, 49, 49, 0.3);
+  transition: all 0.3s ease;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* 📂 Upload Box */
+.upload-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  border: 2px dashed var(--highlight-blue);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--highlight-blue);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.upload-box:hover {
+  background: rgba(0, 191, 255, 0.2);
+  border-color: var(--highlight-red);
+  box-shadow: 0px 0px 10px var(--highlight-red);
+}
+
+/* 🚀 Upload & Summarize Button */
+.upload-button {
+  margin-top: 15px;
+  background: linear-gradient(45deg, #ff3131, #990000);
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 15px rgba(255, 49, 49, 0.5);
+}
+
+.upload-button:hover {
+  background: linear-gradient(45deg, #990000, #ff3131);
+  box-shadow: 0px 0px 15px var(--highlight-red);
+  transform: scale(1.05);
+}
+
+.upload-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 🔄 Loading Spinner */
+.loading-spinner {
+  font-size: 1.5rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ⚠️ Error Message */
+.error-message {
+  color: #ff3131;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* 📜 Summary Card */
+.summary-card {
+  background: rgba(255, 255, 255, 0.08);
+  backd

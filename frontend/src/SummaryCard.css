@@ -1,0 +1,108 @@
+/* 🌟 Summary Card: Audi-Inspired Glassmorphism */
+.summary-card {
+    background: rgba(255, 255, 255, 0.08); /* Subtle transparency */
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(255, 49, 49, 0.5);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-left: 6px solid var(--highlight-red);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* 🎇 Glowing Border Effect */
+  .summary-card::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--highlight-red), var(--highlight-blue));
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 15px rgba(255, 49, 49, 0.8);
+  }
+  
+  /* 📜 Summary Title */
+  .summary-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--highlight-blue);
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+  }
+  
+  /* 🔹 Summary Points */
+  .summary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* ✨ Summary Text Styling */
+  .summary-item {
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  /* 🏎️ Glowing Effect on Hover */
+  .summary-item:hover {
+    transform: scale(1.02);
+    color: var(--highlight-red);
+  }
+  
+  /* 📌 Summary Bullet Points */
+  .summary-item::before {
+    content: "🚀"; /* Custom Icon */
+    font-size: 1.2rem;
+    color: var(--highlight-red);
+    transition: color 0.3s ease;
+  }
+  
+  /* 🎭 Animated Text Reveal */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 📝 Apply Animation to Summary Items */
+  .summary-item {
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  /* 🌙 Responsive */
+  @media (max-width: 768px) {
+    .summary-card {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    .summary-title {
+      font-size: 1.3rem;
+    }
+  
+    .summary-item {
+      font-size: 0.95rem;
+    }
+  }
+  
