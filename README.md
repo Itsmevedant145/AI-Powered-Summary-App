@@ -1,74 +1,54 @@
 AI-Powered PDF Summary App
-A web application that allows users to upload PDF files and receive concise summaries powered by Google's AI API. The summarized content is displayed on a clean and simple React component.
+A web application that allows users to upload PDF files and receive concise summaries powered by Google's AI API. The summarized content appears neatly on a React component.
 
 🚀 Features
-📄 Upload PDF files directly from your device
-🤖 AI-generated summaries of PDF content
-⚛️ Clean React frontend (using regular CSS)
-🗂️ Backend powered by Node.js and Express
-🔒 Secure file handling and uploads
+Upload PDF files directly from your device
+AI-generated summaries of PDF content
+Clean React frontend styled with regular CSS
+Backend powered by Node.js and Express
+Secure file handling and uploads
 🗂️ Project Structure
-pgsql
-Copy
-Edit
-AI-Powered-Summary-App/
-├── backend/
-│   ├── node_modules/
-│   ├── uploads/
-│   ├── package-lock.json
-│   ├── package.json
-│   └── server.js
-└── frontend/
-    ├── public/
-    ├── src/
-    ├── .gitignore
-    ├── README.md
-    ├── eslint.config.js
-    ├── index.html
-    ├── package-lock.json
-    ├── package.json
-    └── vite.config.js
+This project is organized into two main folders:
+
+backend – Contains the server-side code built with Node.js and Express
+frontend – Contains the React application
+Inside each, you'll find files like package.json, source folders, and configuration files.
+
 🛠️ Technologies Used
 Frontend
 React
 Vite
-CSS (No external styling libraries)
+CSS (no external styling libraries)
 Backend
 Node.js
 Express.js
 Multer (for file uploads)
 Google AI API (for summaries)
-📥 Getting Started
-Backend Setup
-Navigate to the backend directory
-cd backend
-Install dependencies
-npm install
-Start the backend server
-node server.js
-Frontend Setup
-Navigate to the frontend directory
-cd frontend
-Install dependencies
-npm install
-Start the frontend development server
-npm run dev
-Access the App
-Open your browser and go to:
-http://localhost:5173
+📥 How to Run the Project Locally
+Running the Backend
+Open your terminal and navigate to the backend folder.
+Install the required dependencies by running npm install.
+Once installed, start the backend server by running node server.js.
+The backend server will now be running and ready to handle file uploads and communication with the AI API.
+
+Running the Frontend
+Open a new terminal window and go to the frontend folder.
+Install the frontend dependencies by running npm install.
+Start the frontend development server by running npm run dev.
+You can now open your browser and visit http://localhost:5173 to use the app.
 
 📌 How It Works
-Upload your PDF file through the React frontend
-The backend processes and sends the PDF content to Google’s AI API
-The summarized text is returned and displayed on a React summary card component
+Upload a PDF file through the upload form in the React frontend.
+The backend (Node.js) processes the upload and extracts the content.
+That content is sent to Google's AI API to generate a summary.
+The summary is sent back and displayed on a summary card in the React app.
 🔮 Future Improvements
-Add user authentication (login/signup)
-Support for multiple languages
-UI enhancements with Material-UI or Tailwind CSS
-Download summarized content as a text file
+Add user authentication for login and signup
+Support multiple languages
+Improve the UI with a modern component library (like Material-UI or Tailwind CSS)
+Provide an option to download the summarized content as a text file
 🤝 Contributing
-Feel free to fork the repository and submit a pull request to suggest improvements or fix bugs!
+Feel free to fork this repository and submit pull requests with suggestions or improvements!
 
 📄 License
 This project is licensed under the MIT License.
-
